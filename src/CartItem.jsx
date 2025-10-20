@@ -17,9 +17,9 @@ const CartItem = ({ onContinueShopping }) => {
       total += parseFloat(item.cost.substring(1)) * item.quantity;
     });
     return total;
- 
   };
 
+  
   const handleContinueShopping = (e) => {
     //call the onContinueShopping prop function to navigate back to product list
     onContinueShopping(e);
